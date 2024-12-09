@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/out-new-gzip.loader.js"></script>
+    <script src="Build/out-new-nocompression.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/out-new-gzip.data.gz",
-        frameworkUrl: "Build/out-new-gzip.framework.js.gz",
-        codeUrl: "Build/out-new-gzip.wasm.gz",
+        dataUrl: "Build/out-new-nocompression.data",
+        frameworkUrl: "Build/out-new-nocompression.framework.js",
+        codeUrl: "Build/out-new-nocompression.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "pookiebottle",
